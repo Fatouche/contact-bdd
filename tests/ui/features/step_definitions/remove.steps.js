@@ -25,8 +25,8 @@ When(/^User clicks on remove button of the first contact$/ , function(callback) 
     this.browser.visit ("http://127.0.0.1:3000",(err)=> {
         if (err) throw err;
 
-        var tab = this.browser.queryAll ('table tbody td a');
-        tab[0].click();
+        var tab = this.browser.query ('table tbody td a');
+        tab.click();
 
         callback();
     });
